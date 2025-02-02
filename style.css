@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*   
+   {
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    margin: 0px;
+    padding: 0px;
+   }
+
+body
+   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+.NavTop
+   {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-align: center;
+    padding-right: 50px;
+   }
+
+.NavTop a
+   {
+    color: white;
+    font-size: 15px;
+    text-decoration: none; 
+    padding: 5px 7.5px;
+   }
+
+.NavTop a:hover
+   {
+    background-color: white;
+    color: black;
+    transition: all ease-in-out 0.35s;
+   }
+
+.NavCenter
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+   }
+
+.NavCenter img
+   {
+    height: 100px;
+   }
+
+.NavCenterRight
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+
+.NavCenterRight select
+   {
+    font-size: 17.5px;
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 0px 25px;
+    padding: 7.5px;
+    width: 250px;
+   }
+
+.NavCenter a 
+   {
+    font-size: 17.5px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: black;
+   }
+
+.NavCenter i
+   {
+    font-size: 25px;
+    margin: 0px 5px;
+   }
+
+.SearchBox
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(235, 235, 235);
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 0px 25px 0px 20px;
+    width: 325px;
+   }
+
+.SearchBox button
+   {
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgb(235, 235, 235);
+    font-size: 17.5px;
+    padding: 7.5px;
+   }
+
+.SearchBox input
+   {
+    background-color: rgb(235, 235, 235);
+    color: black;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 17.5px; 
+    padding: 5px;
+    outline: none;
+   }
+   
+.SearchBox i
+   {
+    font-size: 17.5px;
+   }
+
+.NavBottom
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+   }
+
+.NavBottom a
+   {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+   }
+
+.NavBottom a:hover
+   {
+    background-color: darkblue;
+    color: white;
+    transition: all ease-in-out 0.45s;
+   }
+
+
+
+   .course-heading{
+        width: 100%;
+   }
+   h2 {
+      font-size: 30px;
+      margin: 10px 0px 35px 85px;
+      font-weight: 600;
+      background: linear-gradient(to right,orangered,yellow,white);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  hr {
+      width: 90vw;
+      border: 1px solid black;
+  }
+  .coursecontainer {
+      width: 99vw;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column; 
+      /* border: 2px solid red; */
+  }
+  .heading-container {
+    width: 90%;
+  }
+  .heading {
+      font-size: 25px;
+      /* border: 2px solid red; */
+      font-weight: 500;
+      margin: 10px 0px 30px 20px;
+  }
+  .cardcontainer {
+      width: 90%;
+      height: 55vh;
+      display: flex;
+      justify-content: space-evenly; 
+      margin-bottom: 20px;
+      overflow-x: auto; 
+      overflow-y: hidden; 
+      scroll-behavior: smooth;
+      gap: 10px;
+      padding: 5px;
+      box-sizing: border-box;
+      transition: scrollbar-color 0.5s ease;
+  }
+  .cardcontainer.hidden-scrollbar {
+      scrollbar-width: none; /* Firefox: Hide scrollbar */
+  }
+  
+  .cardcontainer::-webkit-scrollbar {
+      height: 8px; /* Visible scrollbar height */
+      transition: opacity 0.5s ease; /* Smooth hiding effect for WebKit */
+  }
+  
+  .cardcontainer.hidden-scrollbar::-webkit-scrollbar {
+      opacity: 0; /* Hide scrollbar */
+  }
+  
+  .card {
+      flex: 0 0 auto;
+      width: 18vw;
+      height: 50vh;
+      border: 1px solid white;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+      position: relative;
+  }
+  
+  .cardimg {
+      width: 100%;
+      height: 50%;
+      border-radius: 10px;
+  }
+  .branch {
+      width: 200px;
+      font-size: 17px;
+      font-weight: 500;
+      margin: 10px 0px 15px 10px;
+  }
+  .detail {
+      display: flex;
+      margin: 0px 0px 15px 10px;
+      gap: 40px;
+  }
+  .detail span {
+      margin-left: 5px;
+      font-weight: 300;
+  }
+  .buttons {
+      position: absolute;
+      width: 100%;
+      bottom: 20px;
+  }
+  .more {
+      width: 38%;
+      padding: 10px;
+      font-weight: 300;
+      background-color: white;
+      margin-left: 10px;
+      border: 2px solid rgb(255, 255, 0);
+      border-radius: 15px 0 15px 0;
+      cursor: pointer;
+      transition: all 500ms ease-out;
+  }
+  .apply {
+      width: 38%;
+      padding: 10px;
+      font-weight: 300;
+      background-color: orangered;
+      border: none;
+      color: white;
+      margin-left: 40px;
+      border-radius: 15px 0 15px 0;
+      cursor: pointer;
+      transition: all 500ms ease-out;
+  }
+  .more:hover {
+      transform: translateY(-5px);
+  }
+  .apply:hover {
+      transform: translateY(-5px);
+  } 
+
+
+
+   .Footer {
+      height: 40vh;
+      width: 100%;
+      display: flex;
+      justify-content:space-evenly;
+      background-color: white; 
+  }
+  .important {
+      margin-left: 30px;
+  }
+  .portals {
+      margin-left: 30px;
+  }
+  .college {
+      margin-left: 30px;
+  }
+  .contact {
+      margin-left: 30px;
+  }
+  .importheading {
+      color:rgb(12, 5, 5);
+      font-size: 25px;
+  }
+  .portalheading {
+      color: rgb(12, 5, 5);
+      font-size: 25px;
+  }
+  .collegeheading {
+      color: rgb(12, 5, 5);
+      font-size: 25px;
+  }
+  .contactheading {
+      color: rgb(12, 5, 5);
+      font-size: 25px;
+  }
+  .links1 {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+  }
+  .links2 {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+  }
+  .links3 {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+  }
+  .link {
+      text-decoration: none;
+      color:black;
+  }
+  .link1 {
+      text-decoration: none;
+      color:black;
+  }
+  .link2 {
+      text-decoration: none;
+      color: black;
+  }
+  .para {
+      color: black;
+      font-size: 20px;
+  }
+  .contacts {
+      text-decoration: none;
+      color: black;
+  }
+  .icons {
+      display: flex;
+      color: black;
+      align-items: center;
+      margin-top: 30px;
+      font-size: 25px;
+      
+  }
+  .icon1 {
+      margin-right: 5px;
+      color:blue;
+  }
+  .icon2 {
+      margin-right: 5px;
+      color: rgd();
+  }
+  .icon3 {
+      margin-right: 5px;
+      color: whitesmoke;
+      background: linear-gradient(120deg, #405DE6 0%, #405DE6 10%, #833AB4 20%, #C13584 30%, #E1306C 40%, #FD1D1D 50%, #F56040 60%, #F77737 70%, #FCAF45 80%, #FFDC80 100%);
+      padding-top: 2px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-radius: 7px;
+      text-align: center;
+      font-size: 20px;
+  }
+  .icon4 {
+      margin-right: 5px;
+      color: rgb(218, 5, 5);
+  }
+  .icon5 {
+      color: rgb(107, 141, 220);
+  }
+  .About {
+      margin-top: 20px;
+  }
+  .privacy {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+  }
+  .terms {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+  }
+  .refund {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+  }
+  .copyright {
+      font-size: 10px;
+      margin-top: 75px;
+  }
+  .logo {
+      height: 50px;
+      margin: 25px -8.5px;
+  }
