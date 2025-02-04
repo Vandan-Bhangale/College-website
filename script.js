@@ -10,6 +10,9 @@ more.addEventListener("click",() => {
     console.log("learn more button is clicked")
     loadContent(1);
 })
+let currentSlide = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
 
 function showSlide(index) {
     if (index >= totalSlides) {
