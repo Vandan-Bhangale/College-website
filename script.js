@@ -4,13 +4,8 @@ let more = document.querySelector(".more");
 function loadContent(cardNumber) {
     document.querySelectorAll("body > *:not(.content)").forEach(el => el.style.display = "none");
     content.innerHTML = cardDetail[cardNumber] || "<p>Content not found</p>";
-}
-
-more.addEventListener("click",() => {
-    console.log("learn more button is clicked")
-    loadContent(1);
     window.scrollTo(0,0);
-})
+}
 let currentSlide = 0;
 const slides = document.querySelector('.slides');
 const totalSlides = document.querySelectorAll('.slide').length;
