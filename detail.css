@@ -208,3 +208,82 @@ h5 {
     margin-top: 5px;
     font-weight: 500;
 }
+.scopeboxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+.scope h2 {
+    margin: 40px 0px;
+    text-align: center;
+    font-weight: 500;
+    background: linear-gradient(to right,orangered,rgb(222, 148, 122));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.scopebox {
+    width: 30%;
+}
+.scopebox p {
+    margin-top: 15px;
+    font-size: 15px;
+    width: 85%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.scopebox span {
+    font-weight: 500;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.scopebox i {
+    font-size: 20px;
+}
+.noticecontainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.notice {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+.noticedetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.noticedetails h2 {
+    margin-right: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 30px;
+    background: linear-gradient(to right,orangered,rgb(230, 134, 99));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.noticedetails h2>span {
+    font-weight: 600;
+}
+.noticedetails button {
+    width: 120px;
+    padding: 10px;
+    font-weight: 300;
+    margin-top: 40px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    border-radius: 15px 0 15px 0;
+    cursor: pointer;
+}
