@@ -9,6 +9,7 @@ function loadContent(cardNumber) {
 more.addEventListener("click",() => {
     console.log("learn more button is clicked")
     loadContent(1);
+    window.scrollTo(0,0);
 })
 let currentSlide = 0;
 const slides = document.querySelector('.slides');
